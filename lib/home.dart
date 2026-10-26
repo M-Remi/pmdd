@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'styles/app_button_styles.dart';
+
+import 'Styles/app_colors.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFAEDE9),
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: Column(
           children: [
@@ -27,7 +31,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 72,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF6E3557),
+                color: AppColors.title,
                 fontFamily: 'Times New Roman', // or another serif font
                 height: 0.9,
               ),
@@ -39,7 +43,7 @@ class HomePage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
-                color: Color(0xFF7C556D),
+                color: AppColors.text,
                 height: 1.2,
                 fontWeight: FontWeight.w500,
               ),
@@ -61,15 +65,10 @@ class HomePage extends StatelessWidget {
                 height: 60,
                 child: ElevatedButton(
                   onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFB76488),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                  ),
+                  style: AppButtonStyles.filledButton,
                   child: const Text(
                     "Login",
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(fontSize: 20, color: AppColors.white),
                   ),
                 ),
               ),
@@ -85,12 +84,7 @@ class HomePage extends StatelessWidget {
                 height: 60,
                 child: OutlinedButton(
                   onPressed: () {},
-                  style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: Color(0xFFB76488), width: 2),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                  ),
+                  style: AppButtonStyles.outlinedButton,
                   child: const Text(
                     "Register",
                     style: TextStyle(fontSize: 20, color: Color(0xFF7C556D)),
