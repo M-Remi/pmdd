@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808320304700",
+    "project_id": "pmdd-dff13",
+    "storage_bucket": "pmdd-dff13.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808320304700:android:491e2661a2ad56212c2539",
+        "android_client_info": {
+          "package_name": "com.example.pmdd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA45yH1VJoQ_pqHUw5y1R79MzLMOQz6X-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
