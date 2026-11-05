@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'styles/app_button_styles.dart';
-
 import 'Styles/app_colors.dart';
+import 'navigation.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                 width: double.infinity,
                 height: 60,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => NavigationService.navigateToLogin(context),
                   style: AppButtonStyles.filledButton,
                   child: const Text(
                     "Login",
@@ -83,7 +83,8 @@ class HomePage extends StatelessWidget {
                 width: double.infinity,
                 height: 60,
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () =>
+                      NavigationService.navigateToRegister(context),
                   style: AppButtonStyles.outlinedButton,
                   child: const Text(
                     "Register",
